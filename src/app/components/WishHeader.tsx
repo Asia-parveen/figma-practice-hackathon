@@ -24,7 +24,7 @@ const  WishHeader = () => {
             </Link>
           </li>
           <li className="lg:text-[16px]">
-            <Link href="#" className="hover:text-gray-700">
+            <Link href="/wishlist" className="hover:text-gray-700">
               About
             </Link>
           </li>
