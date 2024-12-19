@@ -41,7 +41,7 @@ const Footer = () => {
           <p className="text-sm mb-2"><Link href="/">My Account</Link></p>
           <p className="text-sm mb-2"><Link href="/login">Login / Register</Link></p>
           <p className="text-sm mb-2"><Link href="/wishlist">Wishlist</Link></p>
-          <p className="text-sm mb-2"><Link href="/context">Cart</Link></p>
+          <p className="text-sm mb-2"><Link href="/products">Cart</Link></p>
           <p className="text-sm"><Link href="/blog">Shop</Link></p>
         </div>
 
