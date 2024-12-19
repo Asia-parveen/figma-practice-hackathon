@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useCart } from "../../context/CartContext";
 import CartSidebar from "../../../app/components/CartSidebar";
 import Header from "@/app/components/Header";
+import Image from "next/image";
 
 // Mock product data
 const products = [
@@ -105,22 +106,22 @@ const ProductDetails = ({ params }: { params: { id: string } }) => {
         <div className="max-w-screen-lg mx-auto p-6 flex flex-col lg:flex-row gap-8 z-10 relative">
           {/* Left side: Small Images (First 3 images stacked) */}
           <div className="flex flex-col gap-4 w-full lg:w-[170px]">
-            <img
+            <Image
               src={product.image}
               alt={`${product.title} view 1`}
               className="w-full h-[120px] object-cover rounded-md"
             />
-            <img
+            <Image
               src={product.image}
               alt={`${product.title} view 2`}
               className="w-full h-[120px] object-cover rounded-md"
             />
-            <img
+            <Image
               src={product.image}
               alt={`${product.title} view 3`}
               className="w-full h-[120px] object-cover rounded-md"
             />
-            <img
+            <Image
               src={product.image}
               alt={`${product.title} view 4`}
               className="w-full h-[120px] object-cover rounded-md"
@@ -129,7 +130,8 @@ const ProductDetails = ({ params }: { params: { id: string } }) => {
 
           {/* Left side: Main Large Product Image (Below small images) */}
           <div className="w-full lg:w-[520px] lg:h-[520px] mb-6 lg:mb-0">
-            <img
+            <Image
+
               src={product.image}
               alt={product.title}
               className="w-full h-full object-cover rounded-md shadow-lg"

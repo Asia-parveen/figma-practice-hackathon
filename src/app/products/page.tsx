@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "../components/Header";
 import ProductHeading from "../components/ProductHeading";
+import Image from "next/image";
 
 const Products = () => {
   const products = [
@@ -78,7 +79,7 @@ const Products = () => {
               {/* Product Image */}
               <Link href={`/products/${product.id}`}>
                 <div className="w-full h-[250px] flex justify-center items-center">
-                  <img
+                  <Image 
                     src={product.image}
                     alt={product.title}
                     className="w-full h-full object-cover rounded-t-md"

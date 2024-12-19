@@ -2,8 +2,9 @@
 
 import React from "react";
 import { useCart } from "../context/CartContext";
-import { FaTrash, FaShoppingCart, FaCreditCard } from "react-icons/fa";
+import { FaTrash, FaCreditCard } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const ViewCartPage: React.FC = () => {
   const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useCart();
@@ -30,7 +31,7 @@ const ViewCartPage: React.FC = () => {
             <ul className="space-y-6">
               {cart.map((item) => (
                 <li key={item.id} className="flex items-center justify-between bg-white p-4 rounded-lg shadow-md">
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.title}
                     className="w-16 h-16 object-cover rounded-md"
