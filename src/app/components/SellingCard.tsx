@@ -5,6 +5,7 @@
 import React from "react";
 import Image from "next/image";
 import { AiOutlineHeart, AiOutlineEye } from "react-icons/ai";
+import Link from "next/link";
 
 interface SellingCardProps {
   imageSrc: string; // Use this prop for the dynamic image
@@ -35,7 +36,7 @@ const SellingCard: React.FC<SellingCardProps> = ({ imageSrc,  title, price, star
 
         {/* Add to Cart Button */}
         <button className="absolute bottom-0 bg-black text-white px-4 py-2 rounded w-[90%] lg:w-full hidden group-hover:block">
-          Add to Cart
+        <Link href="products">Add to Cart</Link>
         </button>
       </div>
 

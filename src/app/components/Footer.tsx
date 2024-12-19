@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaFacebookF } from "react-icons/fa";
 import { CiTwitter, CiInstagram } from "react-icons/ci";
 import { FaLinkedinIn } from "react-icons/fa6";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -37,11 +38,11 @@ const Footer = () => {
         {/* Account Section */}
         <div className="flex flex-col items-center md:items-start">
           <h2 className="text-lg font-bold mb-4">Account</h2>
-          <p className="text-sm mb-2">My Account</p>
-          <p className="text-sm mb-2">Login / Register</p>
-          <p className="text-sm mb-2">Wishlist</p>
-          <p className="text-sm mb-2">Cart</p>
-          <p className="text-sm">Shop</p>
+          <p className="text-sm mb-2"><Link href="/">My Account</Link></p>
+          <p className="text-sm mb-2"><Link href="/login">Login / Register</Link></p>
+          <p className="text-sm mb-2"><Link href="/wishlist">Wishlist</Link></p>
+          <p className="text-sm mb-2"><Link href="/context">Cart</Link></p>
+          <p className="text-sm"><Link href="/blog">Shop</Link></p>
         </div>
 
         {/* Quick Links Section */}

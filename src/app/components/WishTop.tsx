@@ -1,5 +1,6 @@
 import React from "react";
 import WishTopCard from "./WishTopCard";
+import Link from "next/link";
 
 const WishTop = () => {
   const products = [
@@ -29,7 +30,7 @@ const WishTop = () => {
     <>
       <div className="flex justify-between max-w-screen-2xl lg:px-24 md:mb-0 md:pb-0 lg:mt-[50px]">
         <p className="text-[20px]">Wishlist (4)</p>
-        <button className="border lg:px-6 lg:py-2">Move All To Bag</button>
+        <button className="border lg:px-6 lg:py-2 hover:bg-[#DB4444] hover:text-white"><Link href="/products">Move All To Bag</Link></button>
       </div>
 
       {/* Products Grid */}

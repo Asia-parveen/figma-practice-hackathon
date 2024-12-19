@@ -2,6 +2,7 @@ import React from "react";
 import Timer from "./Timer";
 import Image from "next/image";
 import FlashCard from "./FlashCard";
+import Link from "next/link";
 
 const Flash = () => {
   const targetDate = "2024-12-31T23:59:59";
@@ -67,7 +68,7 @@ const Flash = () => {
         </div>
         <div className="text-center">
   <button className="border-none bg-[#DB4444] text-white text-[14px] md:text-[16px] md:px-[50px] md:py-[16px] px-8 py-4">
-    View All Products
+   <Link href="blog">View All Products</Link>
   </button>
 </div>
         {/* <div className="text-center lg: ml-30% ">

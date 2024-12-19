@@ -37,6 +37,9 @@ const Header = () => {
           <li className="lg:text-[16px] hover:border-b-2 border-gray-700 transition-all duration-200">
             <Link href="/products">Products</Link>
           </li>
+          <li className="lg:text-[16px] hover:border-b-2 border-gray-700 transition-all duration-200">
+            <Link href="/blog">Blog</Link>
+          </li>
         </ul>
 
         {/* Search Field and Icons - Right-Aligned */}

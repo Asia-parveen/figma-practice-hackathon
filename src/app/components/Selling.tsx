@@ -1,6 +1,7 @@
 import React from 'react';
 import Heading from './Heading';
 import SellingCard from './SellingCard';
+import Link from 'next/link';
 
 const Selling = () => {
   const products = [
@@ -44,7 +45,7 @@ const Selling = () => {
           imageAlt="Heading Tag"
         />
         <button className="border-none bg-[#DB4444] text-white text-[14px] md:text-[14px] px-[24px] py-[12px] sm:px-[32px] sm:py-[16px]">
-          View All Products
+         <Link href="blog">View All Products</Link>
         </button>
       </div>
 
